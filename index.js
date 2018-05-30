@@ -45,4 +45,8 @@ async function updateCourse(id) {
   console.log(result);
 }
 
+async function removeCourse(id) {
+  Course.deleteOne({ _id: id });
+}
+
 updateCourse();
